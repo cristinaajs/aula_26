@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        .container{
+            background-color: antiquewhite;
+        }
+        .cadastro{
+            padding: 2%;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .dados{
+            padding: 2%;
+            border-radius: 5%;
+            margin-top: 20px;
+        }
+        .dados__button:hover{
+            background-color: chartreuse;
+
+        }
+        .dados__input{
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        .container__cadastro{
+            background-color:darkkhaki;
+        }
+        .cadastro__input{
+            background-color: coral;
+            border-radius: 10px;
+        }
+        .cadastro__button:hover{
+            background-color: cornflowerblue;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="container__cadastro cadastro">
+        <p>Formulário de Cadastro</p>
+            <form acton="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="cadastro__input" />
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" class="cadastro__input"/> <p></p>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" class="cadastro__input"/>
+
+                <label for="nome">Telefone</label>
+                <input type="text" name="telefone" class="cadastro__input"/> <p></p>
+
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" class="cadastro__input"/> <p></p>
+
+                <label for="confirmar-senha">Confirmar Senha</label> 
+                <input type="text" name="confirmar-senha" class="cadastro__input"/><p></p>
+
+                <input type="submit" value="Enviar" class="cadastro__button" />
+                
+            </form>
+        </div>
+        <div class="container__dados dados">
+            <p>Dados Pessoais</p>
+            <form action="">
+                <label for="nome">Endereço</label>
+                <input type="text" name="endereço" class="cadastro__button">
+
+                <label for="nome">Número</label>
+                <input for="text" name="numero" class="cadastro__button"/> <p></p>
+
+                <label for="nome">Complemento</label>
+                <input type="text" name="complemento" class="cadastro__button"/> <p></p>
+
+                <label for="nome">Bairro</label>
+                <input type="text" name="bairro" class="cadastro__button"> <p></p>
+
+                <label for="nome">Cidade</label>
+                <input type="text" name="cidade" class="cadastro__button"> <p></p>
+
+                <input type="submit" value="Enviar" class="cadastro__button"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
